@@ -1,0 +1,82 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>local_cafe</mat-icon>
+  </button>
+  <span> Angular+NodeJS First Time</span>
+  <span class="example-spacer"></span>
+  <button mat-raised-button color="warn" (click)="openDialog('3000ms', '1500ms')">Add Product</button>
+</mat-toolbar>
+
+<div class="container">
+  <div style="margin-top: 10px;">
+    <mat-form-field appearance="standard">
+      <mat-label>Filter</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+    </mat-form-field>
+    
+    <div class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource" matSort>
+    
+        <!-- ProductName Column -->
+        <ng-container matColumnDef="ProductName">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> ProductName </th>
+          <td mat-cell *matCellDef="let row"> {{row.ProductName}} </td>
+        </ng-container>
+    
+        <!-- Category Column -->
+        <ng-container matColumnDef="Category">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Category </th>
+          <td mat-cell *matCellDef="let row"> {{row.Category}} </td>
+        </ng-container>
+    
+        <!-- Date Column -->
+        <ng-container matColumnDef="Date">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Date </th>
+          <td mat-cell *matCellDef="let row"> {{row.Date | date}} </td>
+        </ng-container>
+    
+        <!-- Freshness Column -->
+        <ng-container matColumnDef="Freshness">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Freshness </th>
+          <td mat-cell *matCellDef="let row"> {{row.Freshness}} </td>
+        </ng-container>
+
+        <!-- Price Column -->
+        <ng-container matColumnDef="Price">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Price </th>
+          <td mat-cell *matCellDef="let row"> {{row.Price | currency}} </td>
+        </ng-container>
+
+        <!-- Comment Column -->
+            <ng-container matColumnDef="Comment">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>Comment </th>
+              <td mat-cell *matCellDef="let row"> {{row.Comment}} </td>
+            </ng-container>
+
+            <!-- Action Column -->
+                <ng-container matColumnDef="Action">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header>Action </th>
+                  <td mat-cell *matCellDef="let row"> 
+                    <button mat-icon-button (click)="editProduct(row)" color="primary">
+                      <mat-icon>edit</mat-icon>
+                    </button> 
+                    <button (click)="deleteProduct(row.id)" mat-icon-button color="warn">
+                      <mat-icon>delete</mat-icon>
+                    </button>
+                  </td>
+                </ng-container>
+            
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    
+        <!-- Row shown when there is no matching data. -->
+        <tr class="mat-row" *matNoDataRow>
+          <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+        </tr>
+      </table>
+    
+      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+    </div>
+    
+  </div>
+</div>

@@ -1,0 +1,122 @@
+{
+  "productList": [
+    {
+      "ProductName": "Asus Rog",
+      "Category": "Electronics",
+      "Freshness": "Brand New",
+      "Price": 950,
+      "Comment": "Its a Laptop",
+      "Date": "2022-08-04T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "ProductName": "PowerX",
+      "Category": "Softwares",
+      "Freshness": "Upcoming",
+      "Price": 500,
+      "Comment": "Its boost your device",
+      "Date": "2022-08-04T18:30:00.000Z",
+      "id": 2
+    },
+    {
+      "ProductName": "2",
+      "Category": "Electronics",
+      "Freshness": "Brand New",
+      "Price": 2,
+      "Comment": "2",
+      "Date": "2022-08-09T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "ProductName": "3",
+      "Category": "Servers",
+      "Freshness": "Second Hand",
+      "Price": 3,
+      "Comment": "3",
+      "Date": "2022-08-03T18:30:00.000Z",
+      "id": 4
+    },
+    {
+      "ProductName": "5",
+      "Category": "Electronics",
+      "Freshness": "Refurbished",
+      "Price": 5,
+      "Comment": "5",
+      "Date": "2022-08-03T18:30:00.000Z",
+      "id": 5
+    },
+    {
+      "ProductName": "8",
+      "Category": "Softwares",
+      "Freshness": "Brand New",
+      "Price": 8,
+      "Comment": "8",
+      "Date": "2022-08-08T18:30:00.000Z",
+      "id": 6
+    },
+    {
+      "ProductName": "6",
+      "Category": "Servers",
+      "Freshness": "Brand New",
+      "Price": 6,
+      "Comment": "6",
+      "Date": "2022-08-16T18:30:00.000Z",
+      "id": 7
+    },
+    {
+      "ProductName": "4",
+      "Category": "Electronics",
+      "Freshness": "Second Hand",
+      "Price": 4,
+      "Comment": "4",
+      "Date": "2022-08-04T18:30:00.000Z",
+      "id": 8
+    },
+    {
+      "ProductName": "1",
+      "Category": "Platforms",
+      "Freshness": "Upcoming",
+      "Price": 1,
+      "Comment": "1",
+      "Date": "2022-08-03T18:30:00.000Z",
+      "id": 9
+    },
+    {
+      "ProductName": "9",
+      "Category": "Platforms",
+      "Freshness": "Refurbished",
+      "Price": 9,
+      "Comment": "9",
+      "Date": "2022-08-01T18:30:00.000Z",
+      "id": 10
+    },
+    {
+      "ProductName": "755",
+      "Category": "Servers",
+      "Freshness": "Refurbished",
+      "Price": 7,
+      "Comment": "7",
+      "Date": "2001-07-04T18:30:00.000Z",
+      "id": 11
+    },
+    {
+      "ProductName": "5",
+      "Category": "Servers",
+      "Freshness": "Second Hand",
+      "Price": 5,
+      "Comment": "5",
+      "Date": "2022-08-09T18:30:00.000Z",
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
