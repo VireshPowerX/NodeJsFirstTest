@@ -1,0 +1,29 @@
+Open D: Drive on Visual Studio Code
+Open Terminal and Run Commands:-
+
+1.) ng new NodeJsFirstTest
+    Yes
+    SCSS
+
+Open NodeJsFirstTest Folder on Visual Studio Code
+Open Terminal and Run Commands:-
+
+1.) ng add @angular/material
+    Yes
+    Indigo/Pink
+    Yes
+    Include and enable animations
+2.) npm install -g json-server
+
+Close Visual Studio Code for now.
+Open GitHub and all files copy and replace it into the NodeJsFirstTest Folder.
+Open NodeJsFirstTest Folder on Visual Studio Code
+
+Open Two Terminals Run Commands:-
+On First Terminal:- ng serve
+On Second Terminal:- json-server --watch db.json
+
+Open Chrome Browser and search on google localhost:4200
+
+
+Done that's it !!!.
